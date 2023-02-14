@@ -17,8 +17,6 @@ export class NoteService {
   private notesUpdated = new Subject<Note[]>();
   private viewNote = new Subject<Note>();
 
-  noteToView:Note = {title: "No Title", date: "Jan 1 1999", body: "No body"}
-
   getNotes(){ return [...this.notes]}
 
   getNoteUpdateListener(){return this.notesUpdated.asObservable()}

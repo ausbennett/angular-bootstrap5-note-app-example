@@ -20,6 +20,8 @@ export class NoteViewComponent implements OnInit, OnDestroy{
       .subscribe((incomingNote: Note) => {
         this.noteData = incomingNote
       })
+
+    this.noteData = this.noteService.getNotes()[0]
   }
 
   ngOnDestroy() {
