@@ -1,0 +1,14 @@
+<h1 class="display-3">Create note:</h1>
+<form>
+  <div class="form-group- p-3">
+    <input type="text" class="form-control" id="title" [formControl]="titleControl">
+  </div>
+  <div class="form-group p-3">
+    <input type="text" class="form-control" id="date" [formControl]="dateControl">
+  </div>
+  <div class="form-group p-3">
+    <textarea class="form-control" id="body" rows="8" [formControl]="bodyControl"></textarea>
+  </div>
+</form>
+
+<button class="btn btn-success" (click)="submitNote()">Add Note</button>
