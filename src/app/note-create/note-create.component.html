@@ -1,13 +1,13 @@
-<h1 class="display-3">Create note:</h1>
+<h1 class="display-3">create note:</h1>
 <form>
   <div class="form-group- p-3">
-    <input type="text" class="form-control" id="title" [formControl]="titleControl">
+    <input type="text" class="form-control" id="title" [formControl]="titleControl" placeholder="title.">
   </div>
   <div class="form-group p-3">
-    <input type="text" class="form-control" id="date" [formControl]="dateControl">
+    <input type="text" class="form-control" id="date" [formControl]="dateControl" placeholder="date.">
   </div>
   <div class="form-group p-3">
-    <textarea class="form-control" id="body" rows="8" [formControl]="bodyControl"></textarea>
+    <textarea class="form-control" id="body" rows="8" [formControl]="bodyControl" placeholder="body."></textarea>
   </div>
 </form>
 
