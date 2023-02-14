@@ -10,14 +10,14 @@ export class NoteService {
   constructor() {}
 
   private notes:Note[] = [
-    {title:"Elliot farted", date:"Feb 11 2023", body:"Today Elliot farted, it was stiiinky"},
-    {title:"Jaime farted", date:"Mar 11 2023", body:"Today Jaime farted, it was stiiinky"},
-    {title:"I farted", date:"Apr 11 2023", body:"Today I farted, it was stiiinky"}
+    {title:"The Weather", date:"Feb 14 2023", body:"Today is valentines day, and the weather is nice."},
+    {title:"Chung-chun", date:"Mar 11 2023", body:"Got a gamsung chung-chun rice dog today, it was delicious :)"},
+    {title:"Got my MBP", date:"Feb 8 2023", body:"Today I got my MBP, it is amazing!"}
   ]
   private notesUpdated = new Subject<Note[]>();
   private viewNote = new Subject<Note>();
 
-  noteToView:Note = {title: "No Title", date: "Jan 1 1999", body: "No body, only head ;)"}
+  noteToView:Note = {title: "No Title", date: "Jan 1 1999", body: "No body"}
 
   getNotes(){ return [...this.notes]}
 
