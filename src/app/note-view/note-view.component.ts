@@ -26,8 +26,4 @@ export class NoteViewComponent implements OnInit, OnDestroy{
     this.noteSub.unsubscribe()
   }
 
-  tempAdd(){
-    this.noteService.addNote({title:"This is a new note", date: "Fuck u", body:"Wow angular is hard but this def helps me"})
-  }
-
 }
